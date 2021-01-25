@@ -4,4 +4,3 @@ def test(a):
     return a + test(a - 1)
 
 
-print(test(4))
