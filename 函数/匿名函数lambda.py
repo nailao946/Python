@@ -10,14 +10,17 @@ print(apend(1, 2))
 # 可在出现一个函数调用不同两种函数情况使用
 def calc(a, b, f):
     return f(a, b)
+
+
 # f则作为选择用哪一个函数进行运算
 def adition(a, b):
     return a + b
+
 
 def subtraction(a, b):
     return a - b
 
 
-print(calc(2, 1, lambda a, b: a * b))
+print(calc(2, 1, lambda a, b: a * b))  # 也可以直接用匿名函数
 print(calc(2, 1, adition))
 print(calc(2, 1, subtraction))
