@@ -27,7 +27,6 @@ def xsendmail():
     smtp.login(sender, password)  # 发件人登录
     smtp.sendmail(sender, [recver], message.as_string())  # as_string 对 message 的消息进行了封装
     smtp.close()
-
 a = input('输入当前剩余树脂：')
 if 161 > int(a) > -1:
     c = 160 - int(a)
